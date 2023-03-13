@@ -1,6 +1,6 @@
 package Array;
 
-// working
+// Removing duplicates inplace from sorted array
 public class RemoveDuplicates {
     /*
      * Approach_1(Brute Force) - create auxilary space and add all unique elements
@@ -27,9 +27,9 @@ public class RemoveDuplicates {
     }
 
     /*
-     * Approach_2 - two pointer approach, in which we place one pointer at index 1
-     * and another at index 0 if pointer ith element is equal to jth element -->
-     * move j to next index else move i and insert the element to this position
+     * Approach_2 (Optimal)- two pointer approach, in which we place one pointer at
+     * index 1 and another at index 0 if pointer ith element is equal to jth element
+     * --> move j to next index else move i and insert the element to this position
      * 
      * TC = O(n)
      * SC = O(1)
@@ -46,7 +46,7 @@ public class RemoveDuplicates {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1 };
+        int[] arr = { 1, 3, 4, 4 };
         int len = arr.length;
         int numberOfUniqueElements = removeDuplicates_2(arr, len);
         System.out.println("Number of unique elements in array = " + numberOfUniqueElements);
