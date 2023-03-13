@@ -1,7 +1,7 @@
 
 # Array
 
-- data structure
+- linear data structure
 - Contiguous memory allocation
 - Representation (in Java):
     1. int []arr = new int[size]; // declaration of array
