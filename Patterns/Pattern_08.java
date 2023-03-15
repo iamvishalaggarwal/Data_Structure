@@ -11,7 +11,7 @@ Output:
    ***
     *
 */
-public class Pattern_8 {
+public class Pattern_08 {
     public static void pattern(int n) {
         int x = n;
         for (int i = 1; i <= n; i++) {
