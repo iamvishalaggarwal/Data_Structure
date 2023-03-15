@@ -31,7 +31,7 @@ public class Pattern_22 {
                 int right = (2 * n - 1) - 1 - j;
                 int bottom = (2 * n - 1) - 1 - i;
                 int value = n - Math.min(Math.min(top, left), Math.min(right, bottom));
-                System.out.print(value);
+                System.out.print(value + " ");
             }
             System.out.println();
         }
