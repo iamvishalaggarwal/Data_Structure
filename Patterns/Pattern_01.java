@@ -3,7 +3,7 @@ package Patterns;
 import java.util.Scanner;
 
 /*
- Pattern:
+ Pattern :
     *****
     *****
     *****
@@ -12,8 +12,8 @@ import java.util.Scanner;
 */
 public class Pattern_01 {
     public static void pattern(int n) {
-        for (int i = 0; i != n; i++) {
-            for (int j = 0; j != n; j++) {
+        for (int i = 0; i != n; i++) { // rows
+            for (int j = 0; j != n; j++) { // columns
                 System.out.print("*" + " ");
             }
             System.out.println();
