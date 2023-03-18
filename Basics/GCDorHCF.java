@@ -41,9 +41,15 @@ public class GCDorHCF {
     }
 
     /*
-     * Euclidean ALgo
+     * Euclidean Algo
      * It states that -
      * gcd(a,b) == gcd (a-b,b) ( a > b)
+     * So, can do this ==> gcd(a,b) == gcd (a%b,b) ( a > b) ==> gcd == b
+     * 
+     * Logic --
+     * greater % smaller --> if one of them is zero --> other is gcd
+     * 
+     * TC = O(log(min(a,b)))
      */
     public static int gcd_3(int num_1, int num_2) {
         if (num_1 == 0) {
@@ -54,8 +60,7 @@ public class GCDorHCF {
             num_2 = num_1 - num_2;
             num_1 = num_1 - num_2;
         }
-        System.out.println(num_1 + " " + num_2);
-        return gcd_3(num_1 - num_2, num_2);
+        return gcd_3(num_1 % num_2, num_2);
     }
 
     public static void main(String[] args) {
