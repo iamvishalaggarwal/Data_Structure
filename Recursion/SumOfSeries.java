@@ -25,7 +25,6 @@ public class SumOfSeries {
         System.out.print("Enter a number: ");
         long number = scanner.nextLong();
         System.out.print("Sum of cubes of series = " + sumOfSeries(number));
-        ;
         scanner.close();
     }
 }
