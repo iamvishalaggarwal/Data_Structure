@@ -5,6 +5,7 @@ import java.util.Scanner;
 class Print1ToNWithoutLoop {
 
     public static void print(int N) {
+        // Backtrack approach
         if (N == 0) {
             return;
         }

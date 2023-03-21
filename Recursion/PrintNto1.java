@@ -8,7 +8,7 @@ public class PrintNto1 {
             return;
         }
         System.out.print(N + " ");
-        print(--N);
+        print(N - 1); // or print(--N);
     }
 
     public static void main(String[] args) {
