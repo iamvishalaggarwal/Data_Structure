@@ -1,4 +1,4 @@
-package Recursion;
+package gfg;
 
 /*
 * Maximise number of cuts in a rod if it can be cut only in given 3 sizes
